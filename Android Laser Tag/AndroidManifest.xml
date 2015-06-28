@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="llc.locallasertag"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="llc.locallasertag.SplashScreen"> 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+               
+            </intent-filter>
+            
+            </activity>
+        <activity
+            android:name="llc.locallasertag.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            
+        </activity>
+        <activity  android:name="llc.locallasertag.Lobby"></activity>
+        <activity  android:name="llc.locallasertag.App_Settings"></activity>
+        <activity android:name="MainActivity"></activity>
+        <activity android:name="llc.locallasertag.TimerActivity"></activity>
+        <activity android:name="PlayingPage"></activity>
+        <activity android:name="OneForAll"></activity>
+        <activity android:name="GamePage"></activity>
+        <activity android:name="CreateGame"></activity>
+    </application>
+
+</manifest>

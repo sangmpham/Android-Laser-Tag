@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#000000"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	 
+	<Button
+	android:id="@+id/startB"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentLeft="true"
+	android:text="Start" />
+
+	<TextView
+	    android:id="@+id/timer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:minHeight="30dp"
+	    android:paddingRight="10dp"
+	    android:textColor="#ff0000"
+	    android:textSize="150sp" />
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <Button
+	        android:id="@+id/changeTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Change Time" />
+
+	    <EditText
+	        android:id="@+id/newTime"
+	        android:layout_width="130dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="38dp"
+	        android:layout_weight="1"
+	        android:ems="10"
+	        android:hint="Enter Seconds"
+	        android:inputType="number"
+	        android:textColor="#ff0000" >
+
+	        <requestFocus />
+	    </EditText>
+	</LinearLayout>
+	 
+	</RelativeLayout>
