@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a2a5a"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/downloadListView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:focusable="false" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/Team"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/downloadListView"
+        android:gravity="center"
+        android:text="Game Status"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/headStatus"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/Team"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/face1"
+         />
+
+    <ListView
+        android:id="@+id/downloadListView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/enemyTeam"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Team"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_toLeftOf="@+id/headStatus" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/enemyTeam"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/bluescore"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_alignTop="@+id/headStatus"
+        android:layout_toRightOf="@+id/headStatus" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/Death"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Deaths"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/redscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/Score"
+        android:layout_toRightOf="@+id/Score"
+        android:layout_toLeftOf="@+id/bluescore"
+        android:background="#000000"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/bluescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/redscore"
+        android:layout_toRightOf="@+id/headStatus"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#0000FF"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Score: "
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/yourDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Death"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textColor="#FFFF00"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

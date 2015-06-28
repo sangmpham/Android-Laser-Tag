@@ -13,7 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Create Your Game"
-        android:textColor="#000000"
+        android:textColor="#555555"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -26,6 +26,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="42dp"
         android:ems="10"
+        android:singleLine="true"
         android:hint="Enter Game Name"
         android:minHeight="50dp"
         android:textColor="#ff0000"
@@ -62,6 +63,29 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Done" />
+        android:text="Done" 
+        android:onClick="GameCreate"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtGameName"
+        android:text="Game Type:"
+        android:textColor="#555555"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chooseGame"
+        android:text="Max players per team:"
+        android:textColor="#555555"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

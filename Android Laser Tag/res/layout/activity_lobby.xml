@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -7,7 +7,52 @@
     <ListView
         android:id="@+id/gameList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
+        android:layout_height="372dp"
+        android:layout_above="@+id/btnCreateGame"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchbar"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/lobbylist" >
 
-</LinearLayout>
+    </ListView>
+    
+    <Button
+        android:id="@+id/btnCreateGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="joinGame"
+        android:text="Create Game"
+        android:background="@drawable/buttonshape"
+        android:minWidth="230dp"
+        android:shadowColor="#48ff00"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="5"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchbar"
+        android:layout_alignBottom="@+id/searchbar"
+        android:layout_toLeftOf="@+id/searchbar"
+        android:text="Search:  " />
+
+</RelativeLayout>

@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="llc.locallasertag"
+    package="llt.locallasertag"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="18" />
-
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity android:name="llc.locallasertag.SplashScreen"> 
+        android:theme="@style/AppTheme" 
+       >
+        <activity
+            android:name="llt.locallasertag.nongame.SplashScreen"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-               
-            </intent-filter>
-            
-            </activity>
-        <activity
-            android:name="llc.locallasertag.FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:theme="@style/FullscreenTheme" >
-            
         </activity>
-        <activity  android:name="llc.locallasertag.Lobby"></activity>
-        <activity  android:name="llc.locallasertag.App_Settings"></activity>
-        <activity android:name="MainActivity"></activity>
-        <activity android:name="llc.locallasertag.TimerActivity"></activity>
-        <activity android:name="PlayingPage"></activity>
-        <activity android:name="OneForAll"></activity>
-        <activity android:name="GamePage"></activity>
-        <activity android:name="CreateGame"></activity>
+        
+        
+        
+        <activity android:name="llt.locallasertag.game.MainActivity"
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            ></activity>
+        <activity android:name="llt.locallasertag.nongame.HowToPlay"
+                  	android:label="How To Play"
+                  	android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                  	 android:screenOrientation="portrait"
+                  	></activity>
+        <activity android:name="llt.locallasertag.nongame.Setting"
+             		android:label="Settings"
+             		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+             		 android:screenOrientation="portrait"
+             		 android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="llt.locallasertag.game.Lobby"
+					android:label="Lobby"
+					android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+					 android:screenOrientation="portrait"
+					 android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="llt.locallasertag.game.PlayingPage"
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+					android:label="Team Deathmatch"></activity>
+        <activity android:name="llt.locallasertag.nongame.TimerActivity"
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="llt.locallasertag.game.CreateGame"
+             android:screenOrientation="portrait"
+            		android:label="Game Creation"
+            		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            	></activity>
+        <activity android:name="llt.locallasertag.game.Room"
+             android:screenOrientation="portrait"
+             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            		android:label="Room"></activity>
+        <activity android:name="llt.locallasertag.nongame.BulletAnimation"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+               android:screenOrientation="portrait" ></activity>
+
+             
     </application>
 
 </manifest>

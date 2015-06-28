@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     <string name="app_name">Local Laser Tag</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string-array name="GameType">
-        <item >Free For All</item>
-        <item >Team vs Team</item>
-        <item >Capture The Flag</item>
-        <item >Team vs Team With Power-Up</item>
+        <item>Team vs Team</item><item >Free For All</item>
+        
     </string-array>
     <string name="Games">Select Game Type</string>
     <string-array name="numPlayer">
-        <item >1</item>
-        <item >2</item>
-        <item >3</item>
-        <item >4</item>
-        <item >5</item>
-        <item >6</item>
+        <item>4</item>
+        <item>3</item><item >2</item>
+        <item>1</item>
+        
     </string-array>
     <string name="NumberPlayer">Number Of Players</string>
    
+
 
 </resources>
